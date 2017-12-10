@@ -1,0 +1,154 @@
+body {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	background-color:#CEECF5 !important;
+	min-height: 1000px;
+
+}
+#top-1{
+	display: none;
+}
+
+#navBar{
+	background-color:#0B173B;
+}
+
+#navLogo{
+	color:#0B173B;
+	padding-left:0.3em;	
+}
+
+.navItem{
+	padding-right:0.5em;
+	padding-left:0.5em;
+}
+
+.navItem, #navRegistro, #navIngresar{
+	color:white;
+	text-align:center;
+	font-size:1.2em;
+}
+
+.navItem:hover{
+	color:white !important;
+	text-decoration: underline !important;
+}
+
+#navRegistro, #navIngresar{
+	background-color: #0B173B;
+	border-left: none;
+	border-bottom: none;
+	border-top: none;
+	border-right: none;
+}
+
+#navRegistro:hover, #navIngresar:hover{
+	box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+	outline-color: rgba(255, 255, 255, 0);
+	outline-offset: 15px;
+	text-shadow: 1px 1px 2px #427388; 
+}
+
+#navRegistro{
+	border-right:1px solid white;
+}
+
+
+#espolimg{
+	border:0;
+	width:6%;
+	margin:0.5em;
+	vertical-align:middle;
+}
+
+#userimg{
+	vertical-align:middle;
+	padding:0.2em;
+	width:25px;
+}
+
+footer{
+	padding-top:1em;
+	background-color:#0B173B;
+	border:1px solid #0040FF;
+	padding-bottom:1em;
+}
+
+
+#disclaimer {
+	color: white;
+	text-align:center;
+	font-weight:bold;
+}
+
+#socialLogo{
+	text-align: center;
+	display: inline-block;
+	width: 16.65%;
+}
+
+#socialLogo img{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10%;
+	width:20%;
+}
+
+#div_disclaimer{
+	display: inline-block;
+	width: 66.65%;
+}
+
+#div_footerPetLogo{
+	display: inline-block;
+	width: 16.65%
+}
+
+#footerPetLogo{
+	display:block;
+	margin: 0 auto;
+	width:40%;
+	clear:both;
+}
+
+@media screen and (max-width: 320px) {
+
+	#navRegistro, #navIngresar {
+		display: block;
+		margin: auto;
+		border: none;
+		padding: auto;
+	}
+
+	#userimg{
+		display: none;
+	}
+
+	#footerPetLogo{
+		display: none;
+	}
+
+	#footerContent div{
+		display: block;
+	}
+
+	#socialLogo{
+		width: 100%;
+		display: inline-block;
+	}
+
+	#socialLogo img{
+		margin: auto;
+	}
+
+	#div_disclaimer{
+		width: 100%;
+	}
+
+	#disclaimer{
+		font-size: 10px;
+	}
+
+}

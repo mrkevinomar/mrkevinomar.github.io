@@ -1,0 +1,17 @@
+
+.modal-content, .model-dialog{
+	border-radius: 20px;
+}
+
+.modal-header{
+    background-color: #0B173B;
+}
+
+#registroTittle, #ingresarTittle{
+    color:white;
+}
+
+.modal-body, .modal-footer{
+    background-color: #CEECF5 !important;
+}
+

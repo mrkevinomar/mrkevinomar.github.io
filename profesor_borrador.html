@@ -1,0 +1,156 @@
+<!doctype html>
+
+<html class="no-js" > 
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Fundamentos Play</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/basic-profesor.css">
+        <link rel="stylesheet" href="assets/css/styleBorrador.css">
+
+    </head>
+
+    <body>
+	
+		<header>
+				<div class="wrapper">
+					<a href="profesor_inicio.html"><img  src="http://www.espol.edu.ec/sites/default/files/logo-espol_0_0.png" alt="EspolLogo"  /></a>
+					<ul id="username">
+						<li class="dropdown">
+						  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Eduardo Cruz[Profesor]<span class="caret"></span></a>
+						  <ul class="dropdown-menu" role="menu">
+							<li><a id="logout" href="index.html">Cerrar Sesión</a></li>
+					
+						  </ul>
+					</li>
+					</ul>
+				</div>
+		</header>
+        
+	
+		<nav class="navbar    col-sm-3 ">
+			<section class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			  </button>
+			</section>
+			<section class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav  navbar-nav navbar-vertical-align ">
+					<li class="active col-sm-12"><a href="#"><span class="glyphicon glyphicon-list-alt"></span>  Preguntas</a></li>
+					<li class="col-sm-12"><a href="" class="menu-option"><span class="glyphicon glyphicon-ok "></span > Aprobar preguntas <span class="badge">5</span></a></li>
+					<li class="col-sm-12"><a href="#" class="menu-option"><span class="glyphicon glyphicon-pencil"></span> Corregir preguntas <span class="badge">6</span></a></li>
+					<li class="col-sm-12"><a href="profesor_add_pregunta.html" class="menu-option"><span class="glyphicon glyphicon-plus"></span>  Crear pregunta </a></li>
+					<li class="col-sm-12"><a href="profesor_borrador.html" class="menu-option"><span class="glyphicon glyphicon-list"></span>  Borrador de preguntas </a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-vertical-align">
+					<li class="active col-sm-12" ><a href="#"><span class="glyphicon glyphicon-user"></span>  Usuarios</a></li>
+					<li class="col-sm-12"><a href="profesor_aprobar_usuarios.html" class="menu-option"><span class="glyphicon glyphicon-thumbs-up"></span>  Aprobar usuarios <span class="badge">5</span></a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-vertical-align">
+					<li class="active col-sm-12"><a href="#"><span class="glyphicon glyphicon-stats"></span>  Estadísitcas</a></li>
+					<li class="col-sm-12"><a href="profesor_estadisticas.html" class="menu-option"><span class="glyphicon glyphicon-stats"></span>  Estadísticas de Niveles</a></li>
+				</ul>
+			</section>
+		</nav>
+
+        
+      
+		<div class="principal  col-sm-9">
+			<h2>Borrador De Preguntas</h2>
+				 <div class="row">
+                    <div class="form-box">
+                    	<form role="form" method="post" class="f1">
+
+                    		<div class="f1-steps">
+                    			<div class="f1-progress">
+                    			    <div class="f1-progress-line" data-now-value="16.66" data-number-of-steps="3" style="width: 16.66%;"></div>
+                    			</div>
+                    			<div class="f1-step active">
+                    				<div class="f1-step-icon"><i class="glyphicon glyphicon-inbox"></i></div>
+                    				<p>Preguntas</p>
+                    			</div>
+                    			<div class="f1-step">
+                    				<div class="f1-step-icon"><i class="glyphicon glyphicon-pencil"></i></div>
+                    				<p>Contenido</p>
+                    			</div>
+                    		    <div class="f1-step">
+                    				<div class="f1-step-icon"><i class="glyphicon glyphicon-ok"></i></div>
+                    				<p>Confirmar</p>
+                    			</div>
+                    		</div>
+                    		
+                    		<fieldset>
+                		    		<table id="table" class="table">
+									<thead>
+										<tr>
+											<th  scope="col">#</th>
+											<th  scope="col">Preguntas</th>
+											<th class="col-md-1" scope="col"></th>
+											<th class="col-md-1" scope="col"></th>
+										</tr>
+									</thead>
+									<tbody id="cuerpo_tabla">
+
+									</tbody>
+								</table>								                                
+                            </fieldset>
+
+                            <fieldset>
+                                <h4>Contenido</h4>
+                                <div>
+									<div class="form-group">
+										<label class="sr-only" >Respuesta 1</label>
+										<textarea id="contenido" name="contenido" class="f1-about-yourself form-control" ></textarea>
+									</div>
+								</div>
+								
+                                <div id="botones_contenido" class="f1-buttons">
+                                    <button type="button" class="btn btn-previous">Anterior</button>
+                                    <button type="button" class="btn btn-next">Siguiente</button>
+                                </div>
+                            </fieldset>
+
+							<fieldset>
+                                <h4>¿Quién aprobará esta pregunta?:</h4>
+                                <div class="form-group">
+                                    <label class="sr-only" >Facebook</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+											<option>Profesor 1</option>
+											<option>Profesor 2</option>
+											<option>Profesor 3</option>
+								
+										</select>
+                                </div>
+                                
+                                <div class="f1-buttons">
+                                    <button type="button" class="btn btn-previous">Anterior</button>
+                                    <button type="submit" class="btn btn-submit">Enviar</button>
+                                </div>
+                            </fieldset>
+                          
+                    	</form>
+                    </div>
+                </div>			
+		</div>
+
+
+    
+
+        <!-- Javascript -->
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="assets/js/scriptBorrador.js"></script>
+        
+      
+        
+
+    </body>
+</html>

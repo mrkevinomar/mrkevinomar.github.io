@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Fundamentos Play - Noticias</title>
+	<link type="text/css" rel="stylesheet" href="assets/css/styleRegistroIngreso.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/styleNavFoot.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/styleNoticias.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="assets/bootstrap/js/jquery.min.js"></script>
+	<script src="assets/bootstrap/js/jquery.backstretch.min.js"></script>
+	<script src="assets/bootstrap/js/jquery-1.11.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+	<script src="assets/js/scriptLogin.js"></script>
+  
+
+</head>
+<body>
+	<header>
+		<nav id="navBar" class="navbar navbar-expand-lg navbar-dark">
+				<a id="navLogo" href="http://www.espol.edu.ec/">
+					<img src="http://www.espol.edu.ec/sites/default/files/logo-espol_0_0.png" alt="EspolLogo"/>
+				</a>
+		  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    		<span class="navbar-toggler-icon"></span>
+		  		</button>
+		  		<div class="collapse navbar-collapse" id="navbarNav">
+		    		<ul class="navbar-nav mr-auto">
+		    			<li class="nav-item">
+							<a class="navItem nav-link" href="index.html">Inicio</a>
+
+		    			</li>
+		      			<li class="nav-item">
+		      				<a class="navItem nav-link" href="noticias.html">Noticias</a>
+		      			</li>
+		      			<li class="nav-item">
+		      				<a class="navItem nav-link" href="informacion.html">Informacion del juego</a>
+		      			</li>
+		      			<li class="nav-item">
+		      				<a class="navItem nav-link" href="tutorial.html">Tutorial</a>
+		      			</li>
+		      			<li class="nav-item">
+		      				<a class="navItem nav-link" href="leaderboard.html">LeaderBoard</a>
+		      			</li>
+		      			<li class="nav-item">
+		      				<a class="navItem nav-link" href="faq.html">Preguntas frecuentes</a>
+		      			</li>
+		    		</ul>
+		    		<span>
+	      				<button id="navRegistro" data-toggle="modal" data-target="#registroModal">Registrarse</button>
+	      			</span>
+	      			<span>
+	      				<button id="navIngresar" data-toggle="modal" data-target="#ingresarModal" >Ingresar
+							<img id="userimg" src="https://www.trainingzone.co.uk/sites/all/modules/custom/sm_pp_user_profile/img/default-user.png" alt="du">
+						</button>
+	      			</span>
+
+		  		</div>
+			</nav>	
+		<div class="banner mbr-parallax-background">									
+			<h1 id="titulo">Fundamentos Play</h1>
+		</div>
+	</header>
+	<section>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-9 col-sm-6 col-xs-7">
+						<h2 id="title-faq">Sección de Noticias</h2>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-5 item-center">
+						<img class="logo" src="img/mascotaLogo.png" alt="Fundamentos Play logo">
+					</div>
+				</div>
+			</div>
+	</section>	
+
+
+	<article>
+		<div class="container-fluid" id="contenedor-noticias">
+			<div class="row">
+				<div class="seccion-noticias">
+					<div class="encabezado-noticia" >
+						<h4 class="noticia">Noticia #1</h4>
+					</div>
+					<div class="contenedor-noticia">
+						<p class="contenido">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+						<img class="col-2" src="https://asesoriacastello.com/images/noticias.jpg" alt="noti1">
+					</div>
+					<div class="encabezado-noticia" >
+						<h4 class="noticia">Noticia #2</h4>
+					</div>
+					<div class="contenedor-noticia">
+						<p class="contenido">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+						<img class="col-2" src="https://asesoriacastello.com/images/noticias.jpg" alt="noti1">
+					</div>
+					<div class="encabezado-noticia" >
+						<h4 class="noticia">Noticia #3</h4>
+					</div>
+					<div class="contenedor-noticia">
+						<p  class="contenido">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+						<img class="col-2" src="https://asesoriacastello.com/images/noticias.jpg" alt="noti1">
+					</div>			
+				</div>
+			</div>
+		</div>	
+
+		<div class="side-menu container" id="contenedor-mapa">
+			<p>Mapa De Jugadores</p>
+			<div id="map">			
+			</div>
+			<script>
+		      function initMap() {
+		      	var locations = [
+				      [ -2.193333, -79.783333],
+				      [-2.185999, -79.982222],
+				      [-2.20010, -80.00001],
+				      [-2.179903, -79.72331]
+				    ];
+		        var pos = {lat: -2.183333, lng: -79.883333};
+		        var map = new google.maps.Map(document.getElementById('map'), {
+		          zoom: 8,
+		          center: pos
+		        });
+
+		        for (i = 0; i < locations.length; i++) {  
+			      	var marker = new google.maps.Marker({
+			        position: new google.maps.LatLng(locations[i][0], locations[i][1]),
+			        map: map
+		      });
+			}
+		}		      
+		    </script>
+		</div>
+	</article>
+	
+
+
+	<footer>
+			<div class="container-fluid">
+				<div class="row" id="footerContent">
+					<div id="socialLogo">
+						<a href="https://www.facebook.com/">
+							<img id="facebookLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/1000px-F_icon.svg.png" alt="Face">
+						</a>
+						<a href="https://twitter.com/">
+							<img id="twitterLogo" src="http://www.elaia.com/wp-content/uploads/2016/11/twitterIcon.png" alt="twitt">	
+						</a>
+						<a href="https://www.google.com.ec/">
+							<img id="mailLogo" src="https://image.flaticon.com/icons/png/512/281/281769.png" alt="mail">					
+						</a>
+					</div>
+					<div id="div_disclaimer">
+						<p id="disclaimer">Fundamentos Play<br>© El contenido de esta obra es de propiedad intelectual de .... Todos los derechos reservados. Prohibida su reproducción total o parcial, comunicación pública o distribución sin autorización previa del titular de los derechos</p>
+					</div>
+					<div id="div_footerPetLogo">
+						<img id="footerPetLogo" src="img/mascotaLogo.png" alt="footerDron">
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	<div class="modal fade" id="registroModal" tabindex="-1" role="dialog" aria-labelledby="registroModal" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="registroTittle">Registro De Usuario</h5>
+		      </div>
+		      <div class="modal-body">
+		        <form>
+		          <div class="form-group">
+		            <label for="nom_registro" class="col-form-label">Nombres y apellidos:</label>
+		            <input type="password" class="form-control" id="nom_registro">
+		          </div>
+		          <div class="form-group">
+		            <label for="correo_registro" class="col-form-label">Correo ESPOL:</label>
+		            <input type="password" placeholder="Example@espol.edu.ec" class="form-control" id="correo_registro">
+		          </div>
+		          <div class="form-group">
+		            <label for="pass_registro" class="col-form-label">Contraseña:</label>
+		            <input type="password" class="form-control" id="pass_registro">
+		          </div>
+		          <div class="form-group">
+		            <label for="curso_opciones" class="col-form-label">Curso:</label>
+		          	<select id="curso_opciones">
+						<option value="default">Curso</option>
+						<option value="curso1">Curso1</option>
+						<option value="curso2">Curso2</option>
+						<option value="curso3">Curso3</option>
+					</select>
+		          </div>
+		        </form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+		        <button type="button" class="btn btn-primary">Registrarse</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		
+		<div class="modal fade" id="ingresarModal" tabindex="-1" role="dialog" aria-labelledby="ingresarModal" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="ingresarTittle">Ingreso</h5>
+		      </div>
+		      <div class="modal-body">
+		        <form>
+		          <div class="form-group">
+		            <input id="correo_ingreso" type="text" placeholder="Correo ESPOL" class="form-control">
+		          </div>
+		          <div class="form-group">
+		            <input id="pass_ingreso" type="password" placeholder="Contraseña" class="form-control">
+		          </div>
+		        </form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+		        <button id="ingresar" type="button" class="btn btn-primary">Ingresar</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfcpNmO1QjFD3MensEraEnbRo9vcN0uPY&callback=initMap"></script>
+
+
+</body>
+</html>

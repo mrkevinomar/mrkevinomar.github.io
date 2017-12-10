@@ -1,0 +1,24 @@
+
+/*Actividades*/
+.notice-icon{
+    height: 50px;
+    width: 50px;
+	margin: 5px;
+	
+}
+
+.actividad-date{
+    float: right;
+}
+
+.actividad{
+    border-bottom: 1px dotted black;
+	margin-bottom: 20px;
+}
+.actividad-body>* {
+    display: inline-block;
+	
+}
+.principal{
+    padding: 30px;
+}

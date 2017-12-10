@@ -1,0 +1,153 @@
+<!doctype html>
+
+<html class="no-js" > 
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Fundamentos Play</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/aprobar-usuarios.css">
+		<link rel="stylesheet" href="assets/css/basic-profesor.css">
+
+    </head>
+
+    <body>
+	
+		<header>
+				<div class="wrapper">
+					<a href="profesor_inicio.html"><img  src="http://www.espol.edu.ec/sites/default/files/logo-espol_0_0.png" alt="EspolLogo"  /></a>
+					<ul id="username">
+						<li class="dropdown">
+						  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Eduardo Cruz[Profesor]<span class="caret"></span></a>
+						  <ul class="dropdown-menu" role="menu">
+							<li><a id="logout" href="index.html">Cerrar Sesión</a></li>
+					
+						  </ul>
+					</li>
+					</ul>
+				</div>
+		</header>
+        
+	
+		<nav class="navbar    col-sm-3 ">
+			<section class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			  </button>
+			</section>
+			<section class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav  navbar-nav navbar-vertical-align ">
+					<li class="active col-sm-12"><a href="#"><span class="glyphicon glyphicon-list-alt"></span>  Preguntas</a></li>
+					<li class="col-sm-12"><a href="" class="menu-option"><span class="glyphicon glyphicon-ok "></span > Aprobar preguntas <span class="badge">5</span></a></li>
+					<li class="col-sm-12"><a href="#" class="menu-option"><span class="glyphicon glyphicon-pencil"></span> Corregir preguntas <span class="badge">6</span></a></li>
+					<li class="col-sm-12"><a href="profesor_add_pregunta.html" class="menu-option"><span class="glyphicon glyphicon-plus"></span>  Crear pregunta </a></li>
+					<li class="col-sm-12"><a href="profesor_borrador.html" class="menu-option"><span class="glyphicon glyphicon-list"></span>  Borrador de preguntas </a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-vertical-align">
+					<li class="active col-sm-12" ><a href="#"><span class="glyphicon glyphicon-user"></span>  Usuarios</a></li>
+					<li class="col-sm-12"><a href="profesor_aprobar_usuarios.html" class="menu-option"><span class="glyphicon glyphicon-thumbs-up"></span>  Aprobar usuarios <span class="badge">5</span></a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-vertical-align">
+					<li class="active col-sm-12"><a href="#"><span class="glyphicon glyphicon-stats"></span>  Estadísitcas</a></li>
+					<li class="col-sm-12"><a href="profesor_estadisticas.html" class="menu-option"><span class="glyphicon glyphicon-stats"></span>  Estadísticas de Niveles</a></li>
+				</ul>
+			</section>
+		</nav>
+        
+      
+		<div class="principal col-sm-9">
+				<h2>Usuarios por Aprobar</h2>
+				<div class="row">
+						<div class="table-responsive">
+							
+							<table id="mytable" class="table table-bordred table-striped">
+								<thead>
+									<tr>
+										<th class="table-button">
+											<p title="all"><button class="btn remove btn-danger btn-xs" ><span class="glyphicon glyphicon-remove"></span></button></p>
+											<p title="all"><button class="btn aprove btn-primary btn-xs"><span class="glyphicon glyphicon-ok"></span></button></p>
+											<input type="checkbox" id="checkall" /> 
+										</th>
+										<th class="table-button">Nombre</th>
+										<th class="table-button">Usuario</th>
+										<th class="table-button">Paralelo</th>
+										<th class="table-button">Email</th>
+										<th class="table-button">Rechazar</th>
+										<th class="table-button">Aprobar</th>
+									</tr>
+								</thead>
+								<tbody>
+								
+									<tr id="1" class="">
+										<td><input type="checkbox" class="checkthis" /></td>
+										<td>Kevin Palacios</td>
+										<td>kopalaci</td>
+										<td>13</td>
+										<td>kopalaci@gmail.com</td>
+										<td><p data-placement="top" data-toggle="tooltip" title="Rechazar"><button value="1" class="btn  btn-danger btn-xs" data-title="Rechazar" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-remove"></span></button></p></td>
+										<td><p data-placement="top" data-toggle="tooltip" title="Aprobar"><button value="1" class="btn btn-primary btn-xs" data-title="Aprobar" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-ok"></span></button></p></td>
+									</tr>
+										
+									<tr id="2">
+										<td><input type="checkbox" class="checkthis" /></td>
+										<td>Kevin Palacios</td>
+										<td>kopalaci</td>
+										<td>13</td>
+										<td>kopalaci@gmail.com</td>
+										<td><p data-placement="top" data-toggle="tooltip" title="Rechazar"><button value="1" class="btn  btn-danger btn-xs" data-title="Rechazar" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-remove"></span></button></p></td>
+										<td><p data-placement="top" data-toggle="tooltip" title="Aprobar"><button value="1" class="btn btn-primary btn-xs" data-title="Aprobar" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-ok"></span></button></p></td>
+									</tr>
+									<tr id="3">
+										<td><input type="checkbox" class="checkthis" /></td>
+										<td>Kevin Palacios</td>
+										<td>kopalaci</td>
+										<td>13</td>
+										<td>kopalaci@gmail.com</td>
+										<td><p data-placement="top" data-toggle="tooltip" title="Rechazar"><button value="1" class="btn  btn-danger btn-xs" data-title="Rechazar" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-remove"></span></button></p></td>
+										<td><p data-placement="top" data-toggle="tooltip" title="Aprobar"><button value="1" class="btn btn-primary btn-xs" data-title="Aprobar" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-ok"></span></button></p></td>
+									</tr>
+									<tr id="4">
+										<td><input type="checkbox" class="checkthis" /></td>
+										<td>Kevin Palacios</td>
+										<td>kopalaci</td>
+										<td>13</td>
+										<td>kopalaci@gmail.com</td>
+										<td><p data-placement="top" data-toggle="tooltip" title="Rechazar"><button value="1" class="btn  btn-danger btn-xs" data-title="Rechazar" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-remove"></span></button></p></td>
+										<td><p data-placement="top" data-toggle="tooltip" title="Aprobar"><button value="1" class="btn btn-primary btn-xs" data-title="Aprobar" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-ok"></span></button></p></td>
+									</tr>
+										
+
+								</tbody>
+							
+							</table>
+
+							
+											
+						</div>
+							
+				</div>
+			
+			
+		</div>
+		
+		<!-- Javascript -->
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="assets/js/aprobar-usuarios.js"></script>
+
+
+    
+
+       
+      
+        
+
+    </body>
+</html>

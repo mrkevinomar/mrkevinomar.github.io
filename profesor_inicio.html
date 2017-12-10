@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html class="no-js" > 
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Fundamentos Play</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/actividad-reciente.css">
+        <link rel="stylesheet" href="assets/css/basic-profesor.css">
+
+    </head>
+
+    <body>
+	
+		<header>
+				<div class="wrapper">
+					<a href="profesor_inicio.html"><img  src="http://www.espol.edu.ec/sites/default/files/logo-espol_0_0.png" alt="EspolLogo"  /></a>
+					<ul id="username">
+						<li class="dropdown">
+						  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Eduardo Cruz[Profesor]<span class="caret"></span></a>
+						  <ul class="dropdown-menu" role="menu">
+							<li><a id="logout" href="index.html">Cerrar Sesión</a></li>
+					
+						  </ul>
+					</li>
+					</ul>
+				</div>
+		</header>
+        
+		<aside>
+			<nav class="navbar    col-sm-3 ">
+				<section class="navbar-header">
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				  </button>
+				</section>
+				<section class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav  navbar-nav navbar-vertical-align ">
+						<li class="active col-sm-12"><a href="#"><span class="glyphicon glyphicon-list-alt"></span>  Preguntas</a></li>
+						<li class="col-sm-12"><a href="" class="menu-option"><span class="glyphicon glyphicon-ok "></span > Aprobar preguntas <span class="badge">5</span></a></li>
+						<li class="col-sm-12"><a href="#" class="menu-option"><span class="glyphicon glyphicon-pencil"></span> Corregir preguntas <span class="badge">6</span></a></li>
+						<li class="col-sm-12"><a href="profesor_add_pregunta.html" class="menu-option"><span class="glyphicon glyphicon-plus"></span>  Crear pregunta </a></li>
+						<li class="col-sm-12"><a href="profesor_borrador.html" class="menu-option"><span class="glyphicon glyphicon-list"></span>  Borrador de preguntas </a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-vertical-align">
+						<li class="active col-sm-12" ><a href="#"><span class="glyphicon glyphicon-user"></span>  Usuarios</a></li>
+						<li class="col-sm-12"><a href="profesor_aprobar_usuarios.html" class="menu-option"><span class="glyphicon glyphicon-thumbs-up"></span>  Aprobar usuarios <span class="badge">5</span></a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-vertical-align">
+						<li class="active col-sm-12"><a href="#"><span class="glyphicon glyphicon-stats"></span>  Estadísitcas</a></li>
+						<li class="col-sm-12"><a href="profesor_estadisticas.html" class="menu-option"><span class="glyphicon glyphicon-stats"></span>  Estadísticas de Niveles</a></li>
+					</ul>
+				</section>
+			</nav>
+		</aside>
+        
+      
+		<section class="principal container  col-sm-9">
+	   
+			<section class="activitiesbox">
+				<h2>Actividad reciente</h2>
+						<!--Aquí van las actividades leidas del json-->
+			</section>
+			
+		</section>
+
+
+        <!-- Javascript -->
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- Actividades.js-->		
+		<script src="assets/js/actividades.js"></script>	
+        
+       
+      
+        
+
+    </body>
+</html>

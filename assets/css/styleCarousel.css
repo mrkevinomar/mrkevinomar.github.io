@@ -1,0 +1,137 @@
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+.multi-item-carousel .carousel-inner > .item {
+  -webkit-transition: 300ms ease-in-out left;
+  transition: 300ms ease-in-out left;
+}
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+.multi-item-carousel .carousel-inner > .item {
+    -webkit-transition: 500ms ease-in-out left;
+    transition: 500ms ease-in-out left;
+    -webkit-transition: 500ms ease-in-out all;
+    transition: 500ms ease-in-out all;
+    -webkit-backface-visibility: visible;
+            backface-visibility: visible;
+    -webkit-transform: none!important;
+            transform: none!important;
+  }
+}
+.multi-item-carousel .carouse-control.left,.multi-item-carousel .carouse-control.right {
+  background-image: none;
+  outline: black;
+}
+.carousel {
+    position: relative;
+    margin-bottom: 0 !important;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.img-responsive{
+  border-radius:15%;
+}
+
+.carousel-item p{
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 640px) {
+ 
+  #name {
+    display: block !important;
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
+    margin: 0px;
+  }
+}
+
+.carousel {
+  height: 350px;
+  margin-bottom: 60px;  
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 350px;
+  background-color: #777;  
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 350px;
+}
+
+.carousel-item{
+  text-align: center;
+}
+
+.carousel-item div img{
+  margin: auto;
+  margin-left: 90%;
+}
+
+img.img-circle:hover {
+    box-shadow: 0 0 10px 2px rgba(0, 140, 186, 0.7);
+}
+
+.carousel-item div div{
+  display: inline-block;
+}
+
+.carousel{
+  background-color: #66c2ff;
+}
+
+.img-circle{
+  width: 60%;
+  border-radius: 50%;
+}
+
+.carousel-control-prev, .carousel-control-next{
+  background-color: #5882FA;
+}
+
+@media screen and (max-width: 320px){
+  .img-circle{
+    display: none;
+  }
+
+  div.col-12{
+    text-align: center;
+  }
+
+  div.col-3{
+    display: none !important;
+  }
+
+  div.col-7{
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+
+  div.col-7 h3{
+    margin: auto;
+  }
+
+  .carousel-item h1{
+    font-size: 30px;
+  }
+
+
+  #content_carousel{
+    max-height: 340px !important;
+  }
+}

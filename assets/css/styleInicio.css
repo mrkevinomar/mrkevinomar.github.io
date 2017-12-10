@@ -1,0 +1,153 @@
+
+
+#banner{
+	background-image: url("https://media.coindesk.com/uploads/2014/10/shutterstock_114252466.jpg");
+	background-size: 100%;
+	background-repeat:no-repeat;
+	padding-bottom: 2em;
+}
+
+#content{
+	margin-top: 2em;
+}
+
+
+#titulo{
+	font-size:50px;
+	text-align:center;
+	color:white;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top:2em;
+	padding-bottom:1em;
+}
+
+
+#androidSLogo{
+	margin-left:41%;
+	width:15%;
+	display:visible;
+}
+
+#div_petLogo{
+	text-align: center;
+	width: 33%;
+	margin: auto;
+	display: inline-block;
+}
+
+#petLogo{
+	display: inline-block;
+	width:60%;
+	padding:0.5em;
+	margin: auto;
+	vertical-align: middle;
+}
+
+#imgJuego{
+	display: inline-block;
+}
+
+article>h3{
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	font-size: 1.5em;
+	color:white; 
+	background-color: #0B173B;
+	padding: 0.3em;
+}
+
+#galeria{
+	max-height: 350px;
+	text-align: center;
+	overflow-y: scroll;
+}
+
+
+div.gallery {
+	margin-left: 5em;
+	margin-right: 5em;
+	display: inline-block;
+	margin: auto 5px;
+	margin-bottom: 1em;
+	margin-top: 1em;
+    border: 1px solid #ccc;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 2px solid #0B173B;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+
+#div_message{
+	display: inline-block;
+	width: 66%;
+}
+
+
+#message{
+	text-align:center;
+	background-color:#5882FA;
+	font-size: 1.3em;
+	font-weight: bold;
+	padding-top:1em;
+	padding-left:1em;
+	padding-right:2em;
+	padding-bottom:1em;
+	margin-top:4em;
+	margin-left:2em;
+	margin-right:2em;
+	border:1px solid #0040FF;
+	border-radius: 20px 30px 30px 5px;
+}
+
+
+
+@media screen and (max-width: 320px) and (max-height: 480px) {
+
+	#titulo{
+		font-size: 30px;
+		color:black;
+		font-weight: bold;
+		padding-bottom: 0.2em;
+		padding-top: 0.5em;
+	}
+
+	#androidSLogo{
+		margin-left: 25%;
+		width: 50%;
+	}
+
+	#petLogo{
+		display: none;
+	}
+
+	#div_message{
+		width: 90%;
+		margin: auto;
+	}
+
+	#message{
+		margin: auto;
+		display: block;
+		width: 100%;
+		font-size:15px;
+		border-radius: 10px;
+	}
+
+	#galeria{
+		max-height: 320px;
+	}
+
+}
