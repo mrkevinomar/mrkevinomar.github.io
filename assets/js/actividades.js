@@ -40,9 +40,6 @@ function cargarActividades() {
     });
 }
 
-$(window).load(function() {
-
-    cargarActividades();
-    
-
-});
+$(window).on('load',function(){
+	cargarActividades();
+})
