@@ -1,6 +1,6 @@
 
 function cargarActividades() {
-  $.getJSON('https://raw.githubusercontent.com/mrkevinomar/mrkevinomar.github.io/master/actividades.json', function(data) {
+  $.getJSON('https://raw.githubusercontent.com/mrkevinomar/mrkevinomar.github.io/master/data/actividades.json', function(data) {
 	  console.log(data);
         $.each(data, function(key, val) {
 			var iconValue = val['icon'];
